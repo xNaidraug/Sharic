@@ -56,10 +56,22 @@
         .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
             right: 0px;
         }
-
-
+    .hola{
+        border: solid 1px red;
+        border-radius: 50%;
+    }
+        #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+        #sortable li span { position: absolute; margin-left: -1.3em; }
     </style>
-
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+        } );
+    </script>
 </head>
 
 <body>
@@ -92,8 +104,8 @@
     <div class="row">
         <!-- Columna de la izquierda -->
         <div class="col-md-3" style="border: 1px solid red" id="cont_izq">
-            <div class="col-md-12" align="center">
-                <img class="" src="../../prueba.jpg">
+            <div class="col-md-12 "  align="center" >
+                <img class="hola" src="../../../../prueba.jpg">
             </div>
             <div class="col-md-12">
                 <p class="text-center">Nombre de usuario</p>
@@ -170,25 +182,32 @@
                 <!-- Parte central - enlaces -->
                 <div class="col-md-12" style="border: 1px solid lightgrey; background: #e5eaf2;">
                     <div class="row">
-                        <!-- Parte de redes sociales en el alta de perfil -->
+                        <!-- Parte de top canciones y playlist -->
                         <div class="col-md-6" style="border: solid 1px red">
-                            <div>Lista 1</div>
-
+                            <div>Lista 2
+                            <ul id="sortable">
+                                <li class="ui-state-default"></li>
+                                <li class="ui-state-default"></li>
+                                <li class="ui-state-default"></li>
+                                <li class="ui-state-default"></li>
+                            </ul>
+                            </div>
                         </div>
 
 
 
                         <div class="col-md-6">
-                            <div>Lista 2</div>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <div>Lista 2
+                            <ul id="sortable">
+                                <li class="ui-state-default"></li>
+                                <li class="ui-state-default"></li>
+                                <li class="ui-state-default"></li>
+                                <li class="ui-state-default"></li>
                             </ul>
+                            </div>
                         </div>
 
-                        <!-- Fin Parte de redes sociales en el alta de perfil -->
+                        <!-- Fin Parte de top canciones y playlist -->
 
                         <!-- Botones formulario -->
                         <div class="col-md-12 container allFormButtons">
@@ -214,7 +233,6 @@
                                     <span class="onoffswitch-switch"></span>
                                 </label>
                             </div>
-                            &nbsp;
                         </div>
                         <!-- Fin botones formulario -->
                     </div>
@@ -226,7 +244,6 @@
         <!-- Fin del div de parte central -->
     </div>
     <!-- Fin Campos del formulario de contacto con validación de campos -->
-    &nbsp;
     <hr>
 
     <!-- Footer -->
