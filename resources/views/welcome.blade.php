@@ -151,6 +151,7 @@
                                 <label for="" class="col-md-6">Apellidos</label>
                                 <input type="text" class="form-control col-md-6" id="txtSurname" placeholder="Introduzca sus apellidos" required="" data-validation-required-message="Por favor introduzca sus apellidos.">
 
+
                                 <div class="col-md-12"></div>
                                 <label for="" class="col-md-6"> Email</label>
                                 <input type="email" class="form-control col-md-6" id="txtEmail" placeholder="Introduzca su email" required="" data-validation-required-message="Por favor introduzca su email.">
