@@ -5,7 +5,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>.onoffswitch {
+    <style>
+        .onoffswitch {
             position: relative; width: 90px;
             -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
         }
@@ -49,7 +50,19 @@
         }
         .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
             right: 0px;
-        }</style>
+        }
+
+
+    /*
+    Lista
+     */
+
+
+
+
+
+
+    </style>
 
 </head>
 
@@ -82,13 +95,12 @@
     <!-- Campos del formulario de contacto con validación de campos-->
     <div class="row">
         <!-- Columna de la izquierda -->
-        <div class="col-md-3">
+        <div class="col-md-3" style="border: 1px solid red" id="cont_izq">
             <div class="col-md-12" align="center">
                 <img class="" src="../../prueba.jpg">
             </div>
             <div class="col-md-12">
-                <p class="text-center"><strong>Nombre Apellido</strong></p>
-                <p class="text-center"><em>Título del perfil de usuario</em></p>
+                <p class="text-center">Nombre de usuario</p>
             </div>
 
             <div class="col-md-12 text-center">
@@ -110,27 +122,12 @@
                 <!-- Fin redes sociales -->
             </div>
 
-            <div class="col-md-12">
-                <!-- Barra vertical de opciones del perfil de usuairo -->
-                <br>
-                <ul class="list-group list-primary">
-                    <a href="#" class="list-group-item">Ver perfil público</a>
-                    <a href="#" class="list-group-item">Mi perfil</a>
-                    <a href="#" class="list-group-item">Fotografia</a>
-                    <a href="#" class="list-group-item">Cuenta</a>
-                    <a href="#" class="list-group-item">Preferencias</a>
-                    <a href="#" class="list-group-item">Datos bancarios</a>
-                    <a href="#" class="list-group-item">Configurar Github</a>
-                    <a href="#" class="list-group-item">Configurar Drive</a>
-                    <a href="#" class="list-group-item">Configurar Dropbox</a>
-                </ul>
-            </div>
-            <!-- Fin Barra vertical de opciones del perfil de usuario -->
         </div>
         <!-- Fin de Columna de la izquierda -->
 
         <!-- Parte central -->
         <div class="col-md-9">
+
             <div class="col-md-12" style="border-width: 1px 1px 0px 1px; border-style: solid; border-color: lightgrey;">
                 <h3 style="text-align: center">Mi perfil</h3>
             </div>
@@ -150,7 +147,6 @@
                                 <div class="col-md-12"></div>
                                 <label for="" class="col-md-6">Apellidos</label>
                                 <input type="text" class="form-control col-md-6" id="txtSurname" placeholder="Introduzca sus apellidos" required="" data-validation-required-message="Por favor introduzca sus apellidos.">
-
 
                                 <div class="col-md-12"></div>
                                 <label for="" class="col-md-6"> Email</label>
@@ -176,17 +172,19 @@
                 <!-- Fin del div central parte de formulario información básica -->
 
                 <!-- Parte central - enlaces -->
-                <div class="row" style="border: 1px solid lightgrey; background: #e5eaf2;">
+                <div class="col-md-12" style="border: 1px solid lightgrey; background: #e5eaf2;">
+                    <div class="row">
                     <!-- Parte de redes sociales en el alta de perfil -->
-                            <div class="col-md-6" style="border: solid 1px red">
-                                <div>Lista 1</div>                                <ul>
+                            <div class="col-md-6 patata"  style="border: solid 1px red">
+
+                                <div>Lista 2</div>
+                                <ul>
                                     <li></li>
                                     <li></li>
                                     <li></li>
                                     <li></li>
                                 </ul>
-                             </div>
-
+                            </div>
 
 
                     <div class="col-md-6">
