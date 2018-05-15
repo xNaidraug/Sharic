@@ -182,7 +182,7 @@
                 <!-- Parte central - enlaces -->
                 <div class="col-md-12" style="border: 1px solid lightgrey; background: #e5eaf2;">
                     <div class="row">
-                        <!-- Parte de top canciones y playlist -->
+                        <!-- Parte de top song y playlist -->
                         <div class="col-md-6" style="border: solid 1px red">
                             <div>Lista 2
                             <ul id="sortable">
@@ -207,7 +207,7 @@
                             </div>
                         </div>
 
-                        <!-- Fin Parte de top canciones y playlist -->
+                        <!-- Fin Parte de top song y playlist -->
 
                         <!-- Botones formulario -->
                         <div class="col-md-12 container allFormButtons">
