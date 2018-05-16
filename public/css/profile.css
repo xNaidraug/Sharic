@@ -57,6 +57,24 @@
     height: 100%;
 }
 
+.profile .infoContainer:hover #editBtn {
+    display: block;
+    cursor: pointer;
+}
+
+.profile .infoContainer #editBtn {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 1em;
+    height: 1em;
+}
+
+.formElement {
+    display: none;
+}
+
 .profile .info {
     width: 60%;
 }
@@ -66,12 +84,10 @@
 }
 
 .profile .name {
-    font-size: 15px;
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 .profile .description {
-    font-size: 11px;
     line-height: 15px;
 }
 
@@ -102,10 +118,12 @@
 }
 
 .stats .value {
-    font-size: 18px;
     font-weight: 600;
 }
 
 .stats .parameter {
-    font-size: 11px;
+}
+
+.profile input {
+    display: none;
 }

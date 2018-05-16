@@ -1,20 +1,24 @@
 @extends('layouts.header')
 
 @section('content')
-<div class="row justify-content-center">
+<div class="d-flex justify-content-center">
     <div class="frame col-md-8 col-sm-5">
-      <div class="center row">
+        <div class="center row">
             <div class="profile col-md-10 justify-content-center">
                 <div class="image">
-                    <img src="http://100dayscss.com/codepen/jessica-potter.jpg">
+                    <img id="profileImage" src="http://100dayscss.com/codepen/jessica-potter.jpg">
                 </div>
-
 
                 <div class="infoContainer row align-items-center justify-content-center clearfix">
                     <div class="info">
-                        <div class="name">{{ Auth::user()-> name }}</div>
+                        <h3 class="name">{{ Auth::user()-> name }}</h3>
+                        <input type="text" class="newData newName"/>
+
                         <div class="description">{{ Auth::user()->description }}</div>
+                        <input type="textarea" class="newData newDescription"/>
+                        <input type="file" class="newData newImage"/>
                     </div>
+                    <span id="editBtn" class="fas fa-edit" onclick="editProfile(this)"></span>
                 </div>
             </div>
             
