@@ -17,3 +17,6 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/profile', 'ProfileController@index')->name('profileCard');
+
+Route::get('/profile','ProfileController@index')->name('profiletable');
+
