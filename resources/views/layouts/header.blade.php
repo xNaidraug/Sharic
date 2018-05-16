@@ -20,8 +20,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -36,11 +36,11 @@
 			    <div class="justify-content-center">
 			        <!-- Left Side Of Navbar -->
 			        <ul class="navbar-nav justify-content-around">
-			            <li><a class="nav-link">
-			                <span class="d-none d-md-block">Home</span> <!-- {{ __('Home') }} -->
+			            <li><a href="{{ url('/') }}" class="nav-link">
+			                <span class="d-none d-md-block">Home</span>
 			                <span class="d-sm-block d-md-none">A</span>
 			            </a></li>
-			            <li><a class="nav-link">
+			            <li><a href="{{ url('profile') }}" class="nav-link">
 			                <span class="d-none d-md-block">Profile</span>
 			                <span class="d-xs-block d-md-none">A</span>
 			            </a></li>
