@@ -7,7 +7,6 @@ window.onload = function() {
 	image = document.getElementById('profileImage');
 	name = document.getElementsByClassName('name')[0];
 	description = document.getElementsByClassName('description')[0];
-	alert(name.innerText + "\n" + description.innerText);
 
 	inputElements = document.getElementsByClassName('newData');
 }
