@@ -26,6 +26,8 @@
     <script src="{{ asset('js/profileEdition.js') }}"></script>
 	<script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 	<script src="{{ asset('js/playlist.js') }}"></script>
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script src="{{ asset('js/api.js') }}"></script>
 
 </head>
 <body>

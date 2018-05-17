@@ -3,10 +3,9 @@
 body{
     height: 100%;
     width: 100%;
-    background-image: url('../img/general_background.jpg');
+
     /*background-size: 100% 100%;*/
-    background-size: cover;
-    background-position: 65% 50%;
+    background-color: #F5F5F5;
 }
 .frame {
     border-radius: 2px;

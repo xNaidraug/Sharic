@@ -41,6 +41,7 @@
     </div>
     <div>
         <ul>
+
             <li class="li"><a href="#" class="lista" id="0">Canción 1</a></li>
             <div id="respuesta-0" style="display:none">
                 <iframe width="500" height="281" src="https://www.youtube.com/embed/OtWWkW7nEI8" frameborder="0"
@@ -66,5 +67,9 @@
             </div>
 
         </ul>
+        <input id="search" type="text" onkeyup="execute()">
+        <button onclick="authenticate().then(loadClient)">authorize and load</button>
+
+
     </div>
 @endsection
