@@ -1,8 +1,17 @@
-#logo {
-	width: 3em;
+nav {
+    background-color: #FFFFFF;
+    border-bottom: solid #ff619e 5px;
 }
 
-nav {
-	background-color: #FFFFFF;
-	border-bottom: solid #ff619e 5px;
+#logo {
+    width: 3em;
+}
+
+.navigator {
+	width: 50%;
+}
+
+.configBtn {
+	color: #ff619e;
+	border-color: #ff619e;
 }
